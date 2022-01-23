@@ -1,0 +1,121 @@
+body {
+  background-color: rgba(44, 44, 44, 0.781);
+  color: rgb(29, 28, 28);
+  font-family: "poppins",sans-serif;
+  min-height: 100vh;
+}
+
+.container{
+  background-color: rgb(252, 252, 252);
+  box-shadow: 10px, 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
+}
+header{
+  font-size: 2rem;
+}
+header, form{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input, form button{
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: 1px solid #f8896b;
+  /* background: rgb(61, 58, 58); */
+}
+form button{
+  color: #f8896b;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover{
+  background: #f8896b;
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.todo-list{
+   min-width: 30%;
+   list-style: none;
+   border-radius: 5px;
+}
+.todo{
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  transition: all 0.5s ease;
+}
+.todo li{
+  flex: 1;
+}
+.trash-btn, .complete-btn, .edit-btn{
+  background: #f8896b;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn{
+  background: #ffd902;
+}
+
+.edit-btn{
+  background: rgb(112, 39, 112);
+}
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+.fa-trash, .fa-check, .fa-edit{
+  pointer-events: none;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+  }
+
+.fallD{
+  display: none;
+}
+
+.clear-tasks{
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #fff6f4;
+  background-color: rgba(59, 35, 4, 0.418);
+  color: rgb(234, 233, 241);
+  
+  
+}
+.clear{
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px){
+  .todo-input{
+    width: 70vw;
+  }
+  header{
+    font-size:1.5rem;
+  }
+}
