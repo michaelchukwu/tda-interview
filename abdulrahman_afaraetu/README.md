@@ -2,6 +2,8 @@
 
 > TODO web page built with Vanilla JS and localStorage.
 
+The web page can be accessed through this link : https://tda-todo.netlify.app/
+
 ![TODO](https://user-images.githubusercontent.com/86073871/150707194-67996ab5-84d6-4834-975f-3746022f0d6b.png)
 
 ## Features
