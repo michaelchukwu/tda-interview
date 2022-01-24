@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>To Do List Application</title>
+</head>
+<body>
+    <div id="todo-wrap" class="widget-wrap">
+        <h1>TO DO LIST</h1>
+      
+        <!-- (A) ADD NEW ITEM -->
+        <form id="todo-add">
+            <input type="button" value="&#128260;" id="deleteall" onclick="delAll()">
+            <input type="text" id="todo-item" placeholder="Title here ..." required/>
+            <input type="submit" id="todo-save" value="&#10010;"/>
+        </form>
+      
+        <!-- (B) LIST ITEMS -->
+        <div id="todo-list" contenteditable="true"> </div>
+      
+        <!-- (C) ITEM TEMPLATE -->
+        <template id="todo-template">
+            <div class="todo-row">
+                <input type="button" class="todo-del" value="&#10006;"/>
+                <div class="todo-item"></div>
+                <input type="button" class="todo-edit" value="&#128393;" onclick="editable()">
+                <input type="button" class="todo-done" value="&#10004;"/>
+            </div>
+        </template>
+        
+        
+      </div>
+      <script src="toDo.js"></script>
+</body>
+</html>
