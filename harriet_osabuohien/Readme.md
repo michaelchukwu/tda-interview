@@ -28,4 +28,4 @@ A functional todo application built through the process of:
 
 # App Demo
 
-- https://harriet-todo-list.netlify.app/
+- https://harriet-todos-list.netlify.app/
