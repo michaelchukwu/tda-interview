@@ -17,3 +17,4 @@ In this project, you will build a simple HTML list of To Do tasks. _This simple 
 - Place your work inside this folder. 
 - Write a detailed instruction on how to run your application __(please endeavour to use a server)__
 - Upon completion, commit on a seperate branch, create a pull request and send an email to Info@thedigitalagencyltd.com
+
