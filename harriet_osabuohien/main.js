@@ -41,19 +41,19 @@ function addTodo(e) {
 
   // Completed task button
   const completedBtn = document.createElement("button");
-  completedBtn.innerHTML = '<i class="fas fa-check"></i>';
+  completedBtn.innerHTML = "Completed";
   completedBtn.classList.add("completed-btn");
   todoDiv.appendChild(completedBtn);
 
   // Remove task button
   const RemoveBtn = document.createElement("button");
-  RemoveBtn.innerHTML = '<i class="fas fa-trash"></i>';
+  RemoveBtn.innerHTML = "Delete";
   RemoveBtn.classList.add("remove-btn");
   todoDiv.appendChild(RemoveBtn);
 
   // Edit task button
   const editBtn = document.createElement("button");
-  editBtn.innerHTML = "EDIT";
+  editBtn.innerHTML = "Edit";
   editBtn.classList.add("edit-btn");
   // editBtn.addEventListener("click", editTask);
   todoDiv.appendChild(editBtn);
