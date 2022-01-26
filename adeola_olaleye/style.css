@@ -1,0 +1,13 @@
+.markDone, .markDone *{
+    opacity: 0.8;
+    color: #6c757d!important;
+}
+span{
+    font-size: 13px;
+    color: #454750;
+    letter-spacing: 0.5px;
+}
+
+.contentEditable{
+    border-bottom: 1px solid black;
+}
