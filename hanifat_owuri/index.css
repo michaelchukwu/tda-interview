@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+      font-size: 10px;
+  }
+  body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(113, 165, 199);
+  }
+  
+ .main-container{
+    max-width: 50vw;
+    border-radius: 2rem;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(144, 173, 187);
+    
+ }
+ ul{
+     list-style-type: disc;
+     padding: 2rem;
+ }
+  ul li {
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 12px 6px 12px 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    position: relative;
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 15px;
+    left: 12px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  .update{
+    display: flex ;
+    justify-content: space-between;
+  }
+  .list-text{
+      margin-right: 1.5rem;
+  }
+ 
+  .buttons{
+      float: right;
+  }
+  button{
+    border: 1px solid green;
+    background: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    outline: none;
+    padding:15px 25px;
+   
+  }
+  button:hover{
+      background-color: green;
+      zoom: 120%;
+  }
+  .delAll{
+      margin: 0.5rem;
+  }
+  .del{
+     border: 1px solid red;
+  }
+  .del:hover{
+      background-color: red;
+  }
+  .flex-items{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .header {
+    padding: 20px 20px;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  
+  /* Style the input */
+  input {
+    outline: none;
+    margin: 0;
+    border: none;
+    border: 1px solid rgb(90, 117, 90);
+   
+    border-radius: 1rem;
+    width: 40rem;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  input::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    margin-left: 1.5rem;
+    border: 1px solid green;
+    background: white;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  

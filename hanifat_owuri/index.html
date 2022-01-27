@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> To-do list</title>
+        <link rel="stylesheet" href="index.css">
+        
+        
+    </head>
+    <body>
+        <div class="main-container">
+            <h1  class="header"> WELCOME!!!! </h1>
+            <h2 class="header"> CREATE YOUR TO-DO LIST</h2>
+             <form onsubmit="addItem()" class="flex-items">
+                <input type="text" id="myInput" placeholder="Add your Todos.....">
+                <button onclick="addItem()" class="addBtn">Add</button>
+             </form> 
+               
+            <ul id="unordered_list">
+                
+            </ul> <br>
+            <button id="btn" class="del" onclick="delAllItem()"> deleteAll </button>
+           
+        </div>
+        
+    </body>
+    <script src="index.js"></script>
+</html>
